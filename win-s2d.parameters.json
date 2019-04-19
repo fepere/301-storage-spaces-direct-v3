@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "namePrefix": { "value": "clsdc305609w00" },
+    "storageAccountType": { "value": "Premium_LRS" },
+    "vmSize": { "value": "Standard_F4s_v2" },
+    "vmCount": { "value": 2 },
+    "vmDiskSize": { "value": 128 },
+    "vmDiskCount": { "value": 2 },
+    "existingDomainName": { "value": "next.loc" },
+    "adminUsername": { "value": "adAdministrator" },
+    "adminPassword": { "value": "Passw0rd12345" },
+    "existingVirtualNetworkRGName": { "value": "WIN-AD-RG" },
+    "existingVirtualNetworkName": { "value": "adVNET" },
+    "existingSubnetName": { "value": "datasubnet" },
+    "sofsName": { "value": "clsdc305609w000-fs12" },
+    "shareName": { "value": "data" }
+  }
+}
