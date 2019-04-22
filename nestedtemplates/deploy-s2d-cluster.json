@@ -295,7 +295,7 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
-      "name": "['clsdc305609w001/s2dConfig']",
+      "name": "[concat(variables('vmNamePrefix'),'0/s2dConfig')]",
       "apiVersion": "2015-06-15",
       "location": "[parameters('location')]",
       "dependsOn": [
