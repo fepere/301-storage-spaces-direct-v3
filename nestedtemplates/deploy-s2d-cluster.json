@@ -295,7 +295,7 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
-      "name": "[concat(variables('vmNamePrefix'),'0/s2dConfig')]",
+      "name": "[concat(variables('vmNamePrefix'),'1/s2dConfig')]",
       "apiVersion": "2015-06-15",
       "location": "[parameters('location')]",
       "dependsOn": [
@@ -316,7 +316,7 @@
             "clusterName": "[variables('clusterName')]",
             "sofsName": "[parameters('sofsName')]",
             "shareName": "[parameters('shareName')]",
-            "vmNamePrefix": "[variables('vmNamePrefix')]",
+            "vmNamePrefix": "[concat(variables('vmNamePrefix')'1')]",
             "vmCount": "[parameters('vmCount')]",
             "vmDiskSize": "[parameters('vmDiskSize')]",
             "witnessStorageName": "[variables('witnessStorageName')]",
