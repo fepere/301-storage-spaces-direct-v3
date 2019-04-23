@@ -121,8 +121,8 @@
   },
   "variables": {
     "apiVersionStorage": "2016-01-01",
-    "storageNamePrefix": "[concat('sdc35609'),uniqueString(resourceGroup().id),'vm')]",
-    "witnessStorageName": "[concat('sdc35609'),uniqueString(resourceGroup().id),'012')]",
+    "storageNamePrefix": "[concat('sdc35609',uniqueString(resourceGroup().id),'vm')]",
+    "witnessStorageName": "[concat('sdc35609',uniqueString(resourceGroup().id),'012')]",
     "witnessStorageType": "Standard_LRS",
     "vmNamePrefix": "[concat(parameters('namePrefix'))]",
     "vmAvailabilitySetName": "[concat('sdc35609w002-avst')]",
